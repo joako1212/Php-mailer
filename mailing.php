@@ -21,9 +21,9 @@ try {
     // Habilita la autenticación SMTP                 
     $mail->SMTPAuth= true;   
     //SMTP correo de gmail                              
-    $mail->Username='alfredo.martinez@epasa.com';    
+    $mail->Username='account@gmail.com';    
      // tu contraseña de entrar a gmail                
-    $mail->Password='999abc22';                              
+    $mail->Password='password';                              
     $mail->SMTPOptions = array(
         'ssl' => array(
             'verify_peer' => false,
@@ -34,9 +34,9 @@ try {
     $mail->Port =587;                              
 
     //el que envía el correo
-    $mail->setFrom('smtp@localhost.com', 'Name');
+    $mail->setFrom('smail@gmail.com', 'Name');
     //el que recibe el correo
-    $mail->addAddress('joakozamartinez@gmail.com', 'User');    
+    $mail->addAddress('mail@gmail.com', 'User');    
     
     // Contennido
     $mail->isHTML(true);   
